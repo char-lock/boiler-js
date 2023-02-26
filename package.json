@@ -1,0 +1,41 @@
+{
+  "name": "boiler",
+  "version": "1.0.0",
+  "description": "Boiler is an empty JS project with all of the amenities pre-initialised the way I like them.",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest",
+    "start:dev": "npm run lint && npx nodemon",
+    "start": "npm run make && node dist/app.js",
+    "make": "rimraf ./dist && tsc",
+    "lint": "eslint . --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/char-lock/boiler-js.git"
+  },
+  "keywords": [
+    "boilerplate",
+    "new",
+    "project"
+  ],
+  "author": "Lockett, Charlotte <lockettc@protonmail.com>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/char-lock/boiler-js/issues"
+  },
+  "homepage": "https://github.com/char-lock/boiler-js#readme",
+  "devDependencies": {
+    "@babel/node": "^7.20.7",
+    "@types/jest": "^29.4.0",
+    "@types/node": "^18.14.1",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "eslint": "^8.35.0",
+    "nodemon": "^2.0.20",
+    "rimraf": "^4.1.2",
+    "ts-jest": "^29.0.5",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  }
+}
